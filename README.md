@@ -80,18 +80,21 @@ Located in `dashboard/nhs_ae_dashboard_multi_months.twbx`
 ```
 nhs-ae-performance-sql-tableau/
 ├── data/
-│ ├── raw/ # .xls source files
-│ ├── processed/ # Cleaned .csv (by month)
-│ └── insights/ # Final SQL result exports
+│   ├── raw/               # Original .xls source files
+│   ├── processed/         # Cleaned monthly .csv files
+│   └── insights/          # Final SQL export results (summary files for Tableau)
 │
 ├── sql/
-│ ├── create_table.sql
-│ └── analysis_queries.sql
+│   ├── create_table.sql   # Table schema and import SQL
+│   └── analysis_queries.sql # Analytical queries for insights
 │
 ├── dashboard/
-│ └── nhs_ae_dashboard_multi_months.twbx
+│   └── nhs_ae_dashboard_multi_months.twbx  # Tableau dashboard file
 │
-└── README.md
+├── visuals/               # 📸 Screenshots, charts, dashboard previews
+│   └── dashboard_preview.png
+|
+└── README.md              # Project overview, tools used, and instructions
 ```
 ---
 
