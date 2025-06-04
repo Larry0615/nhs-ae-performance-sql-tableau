@@ -69,7 +69,7 @@ The goal: uncover system inefficiencies and deliver public-sector-ready insights
 ## 📈 Final Dashboard
 
 🔗 **Live Dashboard (Tableau Public)**  
-[Click here to view](https://public.tableau.com/views/NHSAEPerformanceDashboardNov2024Apr2025/Dashboard1)
+[Click here to view](https://public.tableau.com/app/profile/olanrewaju.oyenekan/viz/NHSAEPerformanceDashboardNov2024Apr2025/NHSAEPerformanceDashboardNov2024Apr2025)
 
 📦 **Full Packaged Workbook (`.twbx`)**  
 Located in `dashboard/nhs_ae_dashboard_multi_months.twbx`
