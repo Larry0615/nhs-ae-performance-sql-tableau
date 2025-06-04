@@ -41,17 +41,27 @@ The goal: uncover system inefficiencies and deliver public-sector-ready insights
 - Table: `nhs_ae_data`
 - Imported cleaned monthly data via DBeaver
 - Used `NULLIF()` to prevent division by zero
+- Ensured consistent `DATE` format for filtering by month
 
-### 3. **SQL Analysis Queries**
-- 🧮 Monthly trend of A&E attendances
-- ⚠️ Breach rate by provider per month
-- 🚩 Flagging providers as:
-  - `Critical` (>40% breached)
-  - `High` (>30%)
-  - `Acceptable` (≤30%)
-- 📍 Top 5 worst-performing trusts each month
+## 🧠 SQL-Based Insights and Analysis
 
-### 4. **Dashboard Design (Tableau)**
+All data was loaded into PostgreSQL and queried with analytical SQL to drive business insight. Highlights include:
+
+- **Attendance and Breach Trends**  
+  Tracked total attendances and over-4-hour breaches over time
+
+- **Performance Banding (CASE logic)**  
+  Classified providers by breach rate:
+  - 🟥 `Critical`: > 40%
+  - 🟧 `High`: 30–40%
+  - 🟩 `Acceptable`: < 30%
+
+- **Trust-Level Ranking (CTE + Window Function)**  
+  Identified Top 5 worst-performing providers by month using:
+  ```sql
+  ROW_NUMBER() OVER (PARTITION BY month ORDER BY pct_breached DESC)
+
+### 3. **Dashboard Design (Tableau)**
 - Connected to exported SQL insight `.csv`
 - Visuals:
   - Monthly breach trend
