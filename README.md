@@ -91,7 +91,7 @@ nhs-ae-performance-sql-tableau/
 ├── dashboard/
 │   └── nhs_ae_dashboard_multi_months.twbx  # Tableau dashboard file
 │
-├── visuals/               # 📸 Screenshots, charts, dashboard previews
+├── visuals/               # 📸 dashboard preview
 │   └── dashboard_preview.png
 |
 └── README.md              # Project overview, tools used, and instructions
