@@ -57,7 +57,7 @@ The goal: uncover system inefficiencies and deliver public-sector-ready insights
   - Monthly breach trend
   - Monthly attendance trend
   - Top 5 breached trusts
-  - Breach rate vs attendance size (scatter)
+  - Trusts Performance flag by Attendance 
 - Filters:
   - Month dropdown
   - Perfomance flag dropdown
