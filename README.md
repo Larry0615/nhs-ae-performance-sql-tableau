@@ -86,28 +86,6 @@ Located in `dashboard/nhs_ae_dashboard_multi_months.twbx`
 
 ---
 
-## 📂 Folder Structure
-```
-nhs-ae-performance-sql-tableau/
-├── data/
-│   ├── raw/               # Original .xls source files
-│   ├── processed/         # Cleaned monthly .csv files
-│   └── insights/          # Final SQL export results (summary files for Tableau)
-│
-├── sql/
-│   ├── create_table.sql   # Table schema and import SQL
-│   └── analysis_queries.sql # Analytical queries for insights
-│
-├── dashboard/
-│   └── nhs_ae_dashboard_multi_months.twbx  # Tableau dashboard file
-│
-├── visuals/               # 📸 dashboard preview
-│   └── dashboard_preview.png
-|
-└── README.md              # Project overview, tools used, and instructions
-```
----
-
 ## 🧠 Key Insights
 
 - 🕒 Breach rates spiked in winter months (Dec–Feb)
@@ -134,7 +112,27 @@ nhs-ae-performance-sql-tableau/
 - Rebuild dashboard in Power BI (next portfolio project!)
 
 ---
-
+## 📂 Folder Structure
+```
+nhs-ae-performance-sql-tableau/
+├── data/
+│   ├── raw/               # Original .xls source files
+│   ├── processed/         # Cleaned monthly .csv files
+│   └── insights/          # Final SQL export results (summary files for Tableau)
+│
+├── sql/
+│   ├── create_table.sql   # Table schema and import SQL
+│   └── analysis_queries.sql # Analytical queries for insights
+│
+├── dashboard/
+│   └── nhs_ae_dashboard_multi_months.twbx  # Tableau dashboard file
+│
+├── visuals/               # 📸 dashboard preview
+│   └── dashboard_preview.png
+|
+└── README.md              # Project overview, tools used, and instructions
+```
+---
 ## 📬 Let’s Connect
 
 📫 I'm actively seeking **Data Analyst roles (UK or remote)**.  
